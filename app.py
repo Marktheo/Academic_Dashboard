@@ -57,3 +57,29 @@ with column2:
     st.dataframe(data=history, use_container_width=True, height=458)
 
 
+# ---- Performance Coefficient ---- #
+
+# Coefficient - 1st Period
+P1 = round(history.loc[history['Period'] == 1].iloc[:, 8].sum() / history.loc[history['Period'] == 1].iloc[:, 5].sum(), 1)
+
+# Coefficient - 2nd Period
+P2 = round(history.loc[history['Period'] <= 2].iloc[:, 8].sum() / history.loc[history['Period'] <= 2].iloc[:, 5].sum(), 1)
+
+# Coefficient DataSet
+coef = [[1, P1],
+       [2, P2]]
+
+# Coefficient DataFrame
+coefficient = pd.DataFrame(coef, columns=['Period', 'Performance Coefficient'])
+
+# Coefficient Histplot
+sb.set_style('whitegrid')
+plt.figure(figsize=(6,6))
+plt0 = sb.barplot(x='Period', y='Performance Coefficient', data=coefficient, palette='mako')
+plt0.set_title('Performance Coefficient')
+plt0.bar_label(plt0.containers[0])
+plt0.set_ylabel(None)
+
+# Right Column
+with column3:
+    st.pyplot(fig=plt0.figure)

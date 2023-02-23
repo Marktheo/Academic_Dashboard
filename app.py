@@ -5,7 +5,7 @@ import pandas as pd
 
 
 # ---- Page Configuration ---- #
-st.set_page_config(page_title='Interactive Dashboard', layout='wide')
+st.set_page_config(page_title='Graduation Dashboard', layout='wide')
 
 
 # ---- Page Header ---- #

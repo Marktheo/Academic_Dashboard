@@ -1,0 +1,122 @@
+[
+    {
+        "Year": 2022,
+        "Semester": 1,
+        "Period": 1,
+        "Subject": "Calculus I", 
+        "Code": "MAC118",
+        "Credits": 6,
+        "Grade": 6.4,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2022,
+        "Semester": 1,
+        "Period": 1,
+        "Subject": "Algorithms & Programming",
+        "Code": "COS110",
+        "Credits": 5,
+        "Grade": 10.0,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2022,
+        "Semester": 1,
+        "Period": 1,
+        "Subject": "Mathematical Logic",
+        "Code": "COS230",
+        "Credits": 5,
+        "Grade": 9.4,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2022,
+        "Semester": 1,
+        "Period": 1,
+        "Subject": "Chemistry",
+        "Code": "IQG111",
+        "Credits": 4,
+        "Grade": 8.0,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2022,
+        "Semester": 1,
+        "Period": 1,
+        "Subject": "Physics I",
+        "Code": "FIT112",
+        "Credits": 4,
+        "Grade": 5.2,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2022,
+        "Semester": 1,
+        "Period": 1,
+        "Subject": "Introduction to Control",
+        "Code": "COE100",
+        "Credits": 2,
+        "Grade": 10.0,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2022,
+        "Semester": 1,
+        "Period": 1,
+        "Subject": "Experimental Physics I",
+        "Code": "FIS112",
+        "Credits": 1,
+        "Grade": 5.0,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2022,
+        "Semester": 2,
+        "Period": 2,
+        "Subject": "Programming Languages",
+        "Code": "EEL670",
+        "Credits": 5,
+        "Grade": 10.0,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2022,
+        "Semester": 2,
+        "Period": 2,
+        "Subject": "Logic Circuits",
+        "Code": "EEL280",
+        "Credits": 5,
+        "Grade": 7.7,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2022,
+        "Semester": 2,
+        "Period": 2,
+        "Subject": "Economics",
+        "Code": "EEI312",
+        "Credits": 4,
+        "Grade": 10.0,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2022,
+        "Semester": 2,
+        "Period": 2,
+        "Subject": "Projective Systems",
+        "Code": "EEG110",
+        "Credits": 4,
+        "Grade": 8.3,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2022,
+        "Semester": 2,
+        "Period": 2,
+        "Subject": "Experimental Physics II",
+        "Code": "FIS121",
+        "Credits": 1,
+        "Grade": 7.7,
+        "Situation": "Approved"
+    }
+]

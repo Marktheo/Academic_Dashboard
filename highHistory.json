@@ -1,0 +1,354 @@
+[
+    {
+        "Year": 2019,
+        "Subject": "Mathematics I", 
+        "Code": "EMI0109",
+        "Credits": 4,
+        "Grade": 8.7,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2019,
+        "Subject": "Portuguese & Literature I", 
+        "Code": "EMI0101",
+        "Credits": 4,
+        "Grade": 8.7,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2019,
+        "Subject": "Computer Architecture", 
+        "Code": "ATM0102",
+        "Credits": 3,
+        "Grade": 9.1,
+        "Situation": "Approved" 
+    },
+    {
+        "Year": 2019,
+        "Subject": "Basic Electronics", 
+        "Code": "ATM0101",
+        "Credits": 3,
+        "Grade": 8.2,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2019,
+        "Subject": "Physics I", 
+        "Code": "EMI0110",
+        "Credits": 3,
+        "Grade": 7.5,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2019,
+        "Subject": "English I", 
+        "Code": "EMI0102",
+        "Credits": 2,
+        "Grade": 9.2,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2019,
+        "Subject": "Physical Education I", 
+        "Code": "EMI0104",
+        "Credits": 2,
+        "Grade": 8.7,
+        "Situation": "Approved" 
+    },
+    {
+        "Year": 2019,
+        "Subject": "Arts I", 
+        "Code": "EMI0103",
+        "Credits": 2,
+        "Grade": 8.6,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2019,
+        "Subject": "Geography I", 
+        "Code": "EMI0105",
+        "Credits": 2,
+        "Grade": 8.1,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2019,
+        "Subject": "Sociology I", 
+        "Code": "EMI0108",
+        "Credits": 2,
+        "Grade": 8.1,
+        "Situation": "Approved" 
+    },
+    {
+        "Year": 2019,
+        "Subject": "History I", 
+        "Code": "EMI0106",
+        "Credits": 2,
+        "Grade": 7.8,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2019,
+        "Subject": "Technical Design", 
+        "Code": "ATM0103",
+        "Credits": 2,
+        "Grade": 7.8,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2019,
+        "Subject": "Chemistry I", 
+        "Code": "EMI0111",
+        "Credits": 2,
+        "Grade": 7.8,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2019,
+        "Subject": "Biology I", 
+        "Code": "EMI0112",
+        "Credits": 2,
+        "Grade": 7.2,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2019,
+        "Subject": "Philosophy I", 
+        "Code": "EMI0107",
+        "Credits": 2,
+        "Grade": 6.9,
+        "Situation": "Approved" 
+    },
+    {
+        "Year": 2020,
+        "Subject": "Portuguese & Literature II", 
+        "Code": "EMI0201",
+        "Credits": 4,
+        "Grade": 8.3,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "Industrial Networks", 
+        "Code": "ATM0204",
+        "Credits": 3,
+        "Grade": 9.9,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "Analogic & Digital Electronics", 
+        "Code": "ATM0201",
+        "Credits": 3,
+        "Grade": 9.7,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "Mathematics II", 
+        "Code": "EMI0209",
+        "Credits": 3,
+        "Grade": 9.3,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "Programming Languages I", 
+        "Code": "ATM0203",
+        "Credits": 3,
+        "Grade": 7.8,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "Biology II", 
+        "Code": "EMI0212",
+        "Credits": 2,
+        "Grade": 10,
+        "Situation": "Approved" 
+    },
+    {
+        "Year": 2020,
+        "Subject": "Chemistry II", 
+        "Code": "EMI0211",
+        "Credits": 2,
+        "Grade": 9.7,
+        "Situation": "Approved" 
+    },
+    {
+        "Year": 2020,
+        "Subject": "Sociology II", 
+        "Code": "EMI0208",
+        "Credits": 2,
+        "Grade": 9.5,
+        "Situation": "Approved" 
+    },
+    {
+        "Year": 2020,
+        "Subject": "Eletrical Motors", 
+        "Code": "ATM0202",
+        "Credits": 2,
+        "Grade": 9.1,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "Physical Education II", 
+        "Code": "EMI0204",
+        "Credits": 2,
+        "Grade": 9.1,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "Philosophy II", 
+        "Code": "EMI0207",
+        "Credits": 2,
+        "Grade": 9,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "Physics II", 
+        "Code": "EMI0210",
+        "Credits": 2,
+        "Grade": 8.8,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "Industrial Processes", 
+        "Code": "ATM0205",
+        "Credits": 2,
+        "Grade": 8.5,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "Arts II", 
+        "Code": "EMI0203",
+        "Credits": 2,
+        "Grade": 8,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "English II", 
+        "Code": "EMI0202",
+        "Credits": 2,
+        "Grade": 7.6,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "Geography II", 
+        "Code": "EMI0205",
+        "Credits": 1,
+        "Grade": 9.3,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2020,
+        "Subject": "History II", 
+        "Code": "EMI0206",
+        "Credits": 1,
+        "Grade": 9.2,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2021,
+        "Subject": "Programming Languages II", 
+        "Code": "ATM0302",
+        "Credits": 4,
+        "Grade": 9.9,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2021,
+        "Subject": "Eletro-Hydraulic & Eletro-Pneumatic", 
+        "Code": "ATM0301",
+        "Credits": 3,
+        "Grade": 10,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2021,
+        "Subject": "Industrial Robotics", 
+        "Code": "ATM0303",
+        "Credits": 3,
+        "Grade": 10,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2021,
+        "Subject": "Automation Projects", 
+        "Code": "ATM0304",
+        "Credits": 3,
+        "Grade": 8.5,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2021,
+        "Subject": "Digital Control Systems", 
+        "Code": "ATM0305",
+        "Credits": 3,
+        "Grade": 7.9,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2021,
+        "Subject": "History III", 
+        "Code": "EMI0303",
+        "Credits": 2,
+        "Grade": 10,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2021,
+        "Subject": "Mathematics III", 
+        "Code": "EMI0304",
+        "Credits": 2,
+        "Grade": 9.3,
+        "Situation": "Approved" 
+    },
+    {
+        "Year": 2021,
+        "Subject": "Physics III", 
+        "Code": "EMI0305",
+        "Credits": 2,
+        "Grade": 9.2,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2021,
+        "Subject": "Biology III", 
+        "Code": "EMI0307",
+        "Credits": 2,
+        "Grade": 8.9,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2021,
+        "Subject": "Geography III", 
+        "Code": "EMI0302",
+        "Credits": 2,
+        "Grade": 8.8,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2021,
+        "Subject": "Chemistry III", 
+        "Code": "EMI0306",
+        "Credits": 2,
+        "Grade": 7.7,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2021,
+        "Subject": "Portuguese & Literature III", 
+        "Code": "EMI0301",
+        "Credits": 2,
+        "Grade": 7.7,
+        "Situation": "Approved"
+    }
+]

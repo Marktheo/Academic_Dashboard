@@ -16,7 +16,7 @@ column0, column1 = st.columns([2, 2])
 with column0:
     st.title('Marcos Vinícius Theodoro Pinheiro da Silva')
     st.subheader('Electronics and Hardware Coordinator - UFRJ Nautilus')
-    st.subheader('Control and Automation Engeneering - UFRJ')
+    st.subheader('Control and Automation Engineering - UFRJ')
     st.subheader('Industrial Automation Technician - CEFET/RJ')
     st.caption('Since 2019, studying and developing projects related to robotics, control and automation.')
 

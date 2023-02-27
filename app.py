@@ -95,8 +95,6 @@ coefficient = pd.DataFrame(coef, columns=['Period', 'Performance Coefficient'])
 sb.set_style('whitegrid')
 plt.figure(figsize=(10, 6))
 plt0 = sb.lineplot(x='Period', y='Performance Coefficient', data=coefficient, palette='mako')
-#plt0.bar_label(plt0.containers[0])
-#plt0.set(yticklabels=[])
 plt0.set_ylabel(None)
 plt0.set_xlabel(None)
 

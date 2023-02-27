@@ -31,51 +31,51 @@ column2, column3 = st.columns([1, 1])
 
 # ---- High School History ---- #
 # History DataFrame Import
-history1 = pd.read_json('highHistory.json', orient ='records')
-
-# History DataFrame Format
-history1['Year'] = history1['Year'].astype(str)
-
-# History Insert - Grade x Credits
-history1.insert(6, 'Accum. Grade', history1['Grade'] * history1['Credits'])
-
-# Left Column
-with column2:
-    st.markdown('<h3 style="text-align: center">Technical High School History</h3><br>', unsafe_allow_html=True)
-    st.dataframe(data=history1.iloc[:, 0:6], use_container_width=True, height=1578)
-
-
-# ---- Graduation History ---- #
-# History DataFrame Import
-history0 = pd.read_json('gradHistory.json', orient ='records')
+history0 = pd.read_json('highHistory.json', orient ='records')
 
 # History DataFrame Format
 history0['Year'] = history0['Year'].astype(str)
 
 # History Insert - Grade x Credits
-history0.insert(8, 'Accum. Grade', history0['Grade'] * history0['Credits'])
+history0.insert(6, 'Accum. Grade', history0['Grade'] * history0['Credits'])
+
+# Left Column
+with column2:
+    st.markdown('<h3 style="text-align: center">Technical High School History</h3><br>', unsafe_allow_html=True)
+    st.dataframe(data=history0.iloc[:, 0:6], use_container_width=True, height=1578)
+
+
+# ---- Graduation History ---- #
+# History DataFrame Import
+history1 = pd.read_json('gradHistory.json', orient ='records')
+
+# History DataFrame Format
+history1['Year'] = history1['Year'].astype(str)
+
+# History Insert - Grade x Credits
+history1.insert(8, 'Accum. Grade', history1['Grade'] * history1['Credits'])
 
 # Right Column
 with column3:
     st.markdown('<h3 style="text-align: center">Graduation History</h3><br>', unsafe_allow_html=True)
-    st.dataframe(data=history0.iloc[:, 0:8], use_container_width=True, height=458)
+    st.dataframe(data=history1.iloc[:, 0:8], use_container_width=True, height=458)
 
 
 # ---- Performance Coefficient ---- #
 # Coefficient - 1st Year
-Y1 = round(history1.loc[history1['Year'] == "2019"].iloc[:, 6].sum() / history1.loc[history1['Year'] == "2019"].iloc[:, 3].sum(), 1)
+Y1 = round(history0.loc[history0['Year'] == "2019"].iloc[:, 6].sum() / history0.loc[history0['Year'] == "2019"].iloc[:, 3].sum(), 1)
 
 # Coefficient - 2nd Year
-Y2 = round(history1.loc[history1['Year'] == "2020"].iloc[:, 6].sum() / history1.loc[history1['Year'] == "2020"].iloc[:, 3].sum(), 1)
+Y2 = round(history0.loc[history0['Year'] == "2020"].iloc[:, 6].sum() / history0.loc[history0['Year'] == "2020"].iloc[:, 3].sum(), 1)
 
 # Coefficient - 3rd Year
-Y3 = round(history1.loc[history1['Year'] == "2021"].iloc[:, 6].sum() / history1.loc[history1['Year'] == "2021"].iloc[:, 3].sum(), 1)
+Y3 = round(history0.loc[history0['Year'] == "2021"].iloc[:, 6].sum() / history0.loc[history0['Year'] == "2021"].iloc[:, 3].sum(), 1)
 
 # Coefficient - 1st Period
-P1 = round(history0.loc[history0['Period'] == 1].iloc[:, 8].sum() / history0.loc[history0['Period'] == 1].iloc[:, 5].sum(), 1)
+P1 = round(history1.loc[history1['Period'] == 1].iloc[:, 8].sum() / history1.loc[history1['Period'] == 1].iloc[:, 5].sum(), 1)
 
 # Coefficient - 2nd Period
-P2 = round(history0.loc[history0['Period'] <= 2].iloc[:, 8].sum() / history0.loc[history0['Period'] <= 2].iloc[:, 5].sum(), 1)
+P2 = round(history1.loc[history1['Period'] <= 2].iloc[:, 8].sum() / history1.loc[history1['Period'] <= 2].iloc[:, 5].sum(), 1)
 
 # Coefficient DataSet
 coef = [['2019', Y1],
@@ -87,7 +87,7 @@ coef = [['2019', Y1],
 # Coefficient DataFrame
 coefficient = pd.DataFrame(coef, columns=['Period', 'Performance Coefficient'])
 
-# Coefficient Histplot
+# Coefficient Scatterplot
 sb.set_style('whitegrid')
 plt.figure(figsize=(10, 2.75))
 plt0 = sb.stripplot(x='Period', y='Performance Coefficient', data=coefficient, palette='mako')

@@ -65,15 +65,7 @@ with column3:
     st.dataframe(data=history0.iloc[:, 0:8], use_container_width=True, height=458)
 
 
-# ---- Section Break ---- #
-st.markdown('***')
-
-
-# ---- Column Configuration ---- #
-column4, column5 = st.columns([1, 1])
-
-
-# ---- High School Performance Coefficient ---- #
+# ---- Performance Coefficient ---- #
 # Coefficient - 1st Year
 Y1 = round(history1.loc[history1['Year'] == "2019"].iloc[:, 6].sum() / history1.loc[history1['Year'] == "2019"].iloc[:, 3].sum(), 1)
 
@@ -83,30 +75,6 @@ Y2 = round(history1.loc[history1['Year'] == "2020"].iloc[:, 6].sum() / history1.
 # Coefficient - 3rd Year
 Y3 = round(history1.loc[history1['Year'] == "2021"].iloc[:, 6].sum() / history1.loc[history1['Year'] == "2021"].iloc[:, 3].sum(), 1)
 
-# Coefficient DataSet
-coef1 = [[2019, Y1],
-        [2020, Y2],
-        [2021, Y3]]
-
-# Coefficient DataFrame
-coefficient1 = pd.DataFrame(coef1, columns=['Year', 'Performance Coefficient'])
-
-# Coefficient Histplot
-sb.set_style('whitegrid')
-plt.figure(figsize=(10, 5))
-plt1 = sb.barplot(x='Year', y='Performance Coefficient', data=coefficient1, palette='mako')
-plt1.bar_label(plt1.containers[0])
-plt1.set(yticklabels=[])
-plt1.set_ylabel(None)
-plt1.set_xlabel(None)
-
-# Left Column
-with column4:
-    st.markdown('<h3 style="text-align: center">Technical High School Performance Coefficient</h3><br>', unsafe_allow_html=True)
-    st.pyplot(fig=plt1.figure)
-
-
-#  ---- Graduation Performance Coefficient ---- #
 # Coefficient - 1st Period
 P1 = round(history0.loc[history0['Period'] == 1].iloc[:, 8].sum() / history0.loc[history0['Period'] == 1].iloc[:, 5].sum(), 1)
 
@@ -114,22 +82,24 @@ P1 = round(history0.loc[history0['Period'] == 1].iloc[:, 8].sum() / history0.loc
 P2 = round(history0.loc[history0['Period'] <= 2].iloc[:, 8].sum() / history0.loc[history0['Period'] <= 2].iloc[:, 5].sum(), 1)
 
 # Coefficient DataSet
-coef0 = [[2022.1, P1],
-       [2022.2, P2]]
+coef = [['2019', Y1],
+        ['2020', Y2],
+        ['2021', Y3],
+        ['2022.1', P1],
+        ['2022.2', P2]]
 
 # Coefficient DataFrame
-coefficient0 = pd.DataFrame(coef0, columns=['Period', 'Performance Coefficient'])
+coefficient = pd.DataFrame(coef, columns=['Period', 'Performance Coefficient'])
 
 # Coefficient Histplot
 sb.set_style('whitegrid')
-plt.figure(figsize=(10, 5))
-plt0 = sb.barplot(x='Period', y='Performance Coefficient', data=coefficient0, palette='mako')
-plt0.bar_label(plt0.containers[0])
-plt0.set(yticklabels=[])
+plt.figure(figsize=(10, 6))
+plt0 = sb.lineplot(x='Period', y='Performance Coefficient', data=coefficient, palette='mako')
+#plt0.bar_label(plt0.containers[0])
+#plt0.set(yticklabels=[])
 plt0.set_ylabel(None)
 plt0.set_xlabel(None)
 
-# Right Column
-with column5:
-    st.markdown('<h3 style="text-align: center">Graduation Performance Coefficient</h3><br>', unsafe_allow_html=True)
+with column3:
+    st.markdown('<br><h3 style="text-align: center">Academic Performance Coefficient</h3><br>', unsafe_allow_html=True)
     st.pyplot(fig=plt0.figure)

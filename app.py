@@ -10,7 +10,7 @@ st.set_page_config(page_title='Academic Dashboard', layout='wide')
 
 # ---- Page Header ---- #
 # Column Configuration
-column0, column1 = st.columns([3, 2])
+column0, column1 = st.columns([2, 2])
 
 # Left Column
 with column0:
@@ -19,10 +19,6 @@ with column0:
     st.subheader('Control and Automation Engeneering - UFRJ')
     st.subheader('Industrial Automation Technician - CEFET/RJ')
     st.caption('Since 2019, studying and developing projects related to robotics, control and automation.')
-
-# Right Column
-with column1:
-    st.image('network.gif')
 
 
 # ---- Section Break ---- #
@@ -93,11 +89,12 @@ coefficient = pd.DataFrame(coef, columns=['Period', 'Performance Coefficient'])
 
 # Coefficient Histplot
 sb.set_style('whitegrid')
-plt.figure(figsize=(10, 6))
-plt0 = sb.lineplot(x='Period', y='Performance Coefficient', data=coefficient, palette='mako')
+plt.figure(figsize=(10, 2.75))
+plt0 = sb.stripplot(x='Period', y='Performance Coefficient', data=coefficient, palette='mako')
+plt0.set_title('Academic Performance Coefficient')
 plt0.set_ylabel(None)
 plt0.set_xlabel(None)
 
-with column3:
-    st.markdown('<br><h3 style="text-align: center">Academic Performance Coefficient</h3><br>', unsafe_allow_html=True)
+# Right Column
+with column1:
     st.pyplot(fig=plt0.figure)

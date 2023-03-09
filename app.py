@@ -41,7 +41,7 @@ history0.insert(6, 'Accum. Grade', history0['Grade'] * history0['Credits'])
 # Left Column
 with column2:
     st.markdown('<h3 style="text-align: center">Technical High School History</h3><br>', unsafe_allow_html=True)
-    st.dataframe(data=history0.iloc[:, 0:6], use_container_width=True, height=1578)
+    st.dataframe(data=history0.iloc[:, 0:5], use_container_width=True, height=1578)
 
 
 # ---- Graduation History ---- #
@@ -57,7 +57,7 @@ history1.insert(8, 'Accum. Grade', history1['Grade'] * history1['Credits'])
 # Right Column
 with column3:
     st.markdown('<h3 style="text-align: center">Graduation History</h3><br>', unsafe_allow_html=True)
-    st.dataframe(data=history1.iloc[:, 0:8], use_container_width=True, height=458)
+    st.dataframe(data=history1.iloc[:, 0:7], use_container_width=True, height=458)
 
 
 # ---- Performance Coefficient ---- #

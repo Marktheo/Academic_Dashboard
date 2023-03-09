@@ -21,7 +21,6 @@ with column0:
     st.caption('Since 2019, studying and developing projects related to robotics, control and automation.')
 
 
-# ---- Section Break ---- #
 st.markdown('***')
 
 

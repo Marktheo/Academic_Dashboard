@@ -118,5 +118,15 @@
         "Credits": 1,
         "Grade": 7.7,
         "Situation": "Approved"
+    },
+    {
+        "Year": 2023,
+        "Semester": 1,
+        "Period": 3,
+        "Subject":"Calculus II",
+        "Code": "MAC128",
+        "Credits": 4,
+        "Grade": 5.1,
+        "Situation": "Approved"
     }
 ]

@@ -56,7 +56,7 @@ history1.insert(8, 'Accum. Grade', history1['Grade'] * history1['Credits'])
 # Right Column
 with column3:
     st.markdown('<h3 style="text-align: center">Graduation History</h3><br>', unsafe_allow_html=True)
-    st.dataframe(data=history1.iloc[:, 0:7], use_container_width=True, height=458)
+    st.dataframe(data=history1.iloc[:, 0:7], use_container_width=True, height=493)
 
 
 # ---- Performance Coefficient ---- #

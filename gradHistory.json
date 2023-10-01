@@ -123,10 +123,40 @@
         "Year": 2023,
         "Semester": 1,
         "Period": 3,
-        "Subject":"Calculus II",
+        "Subject": "Calculus II",
         "Code": "MAC128",
         "Credits": 4,
         "Grade": 5.1,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2023,
+        "Semester": 1,
+        "Period": 3,
+        "Subject": "Linear Algebra II",
+        "Code": "MAE125",
+        "Credits": 4,
+        "Grade": 6.6,
+        "Situation": "Approved"
+    },
+    {
+        "Year": 2023,
+        "Semester": 1,
+        "Period": 3,
+        "Subject": "Physics II",
+        "Code": "FIT122",
+        "Credits": 4,
+        "Grade": 2.7,
+        "Situation": "Failed"
+    },
+    {
+        "Year": 2023,
+        "Semester": 1,
+        "Period": 3,
+        "Subject": "Experimental Physics III",
+        "Code": "FIN231",
+        "Credits": 1,
+        "Grade": 6.4,
         "Situation": "Approved"
     }
 ]

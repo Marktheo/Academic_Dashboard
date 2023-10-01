@@ -94,7 +94,7 @@ sb.set_style('whitegrid')
 plt.figure(figsize=(10, 3.3))
 plt0 = sb.stripplot(x='Period', y='Performance Coefficient', data=coefficient, palette='mako')
 plt0.set_title('Academic Performance Coefficient')
-plt0.set_ylim(7.8, 9.2)
+plt0.set_ylim(7.4, 9.2)
 plt0.set_ylabel(None)
 plt0.set_xlabel(None)
 

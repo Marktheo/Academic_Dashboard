@@ -75,12 +75,16 @@ P1 = round(history1.loc[history1['Period'] == 1].iloc[:, 8].sum() / history1.loc
 # Coefficient - 2nd Period
 P2 = round(history1.loc[history1['Period'] <= 2].iloc[:, 8].sum() / history1.loc[history1['Period'] <= 2].iloc[:, 5].sum(), 1)
 
+# Coefficient - 3rd Period
+P3 = round(history1.loc[history1['Period'] <= 3].iloc[:, 8].sum() / history1.loc[history1['Period'] <= 3].iloc[:, 5].sum(), 1)
+
 # Coefficient DataSet
 coef = [['2019', Y1],
         ['2020', Y2],
         ['2021', Y3],
         ['2022.1', P1],
-        ['2022.2', P2]]
+        ['2022.2', P2],
+        ['2023.1, P3']]
 
 # Coefficient DataFrame
 coefficient = pd.DataFrame(coef, columns=['Period', 'Performance Coefficient'])

@@ -56,7 +56,7 @@ history1.insert(8, 'Accum. Grade', history1['Grade'] * history1['Credits'])
 # Right Column
 with column3:
     st.markdown('<h3 style="text-align: center">Graduation History</h3><br>', unsafe_allow_html=True)
-    st.dataframe(data=history1.iloc[:, 0:7], use_container_width=True, height=493)
+    st.dataframe(data=history1.iloc[:, 0:7], use_container_width=True, height=598)
 
 
 # ---- Performance Coefficient ---- #
@@ -84,7 +84,7 @@ coef = [['2019', Y1],
         ['2021', Y3],
         ['2022.1', P1],
         ['2022.2', P2],
-        ['2023.1, P3']]
+        ['2023.1', P3]]
 
 # Coefficient DataFrame
 coefficient = pd.DataFrame(coef, columns=['Period', 'Performance Coefficient'])
